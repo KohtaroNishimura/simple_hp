@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUNABACO</title>
+    <style>
+      :root {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #111;
+        background-color: #fafafa;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        padding: 32px 8%;
+      }
+
+      header h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      header p {
+        max-width: 520px;
+        color: #444;
+      }
+
+      main {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+        padding: 0 8% 48px;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 18px;
+        padding: 24px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        transition: transform 220ms ease, box-shadow 220ms ease;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
+      }
+
+      .card h2 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+      }
+
+      footer {
+        padding: 32px 8%;
+        font-size: 0.9rem;
+        color: #777;
+      }
+
+      .cta {
+        margin-top: 16px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0.7em 1.4em;
+        border-radius: 999px;
+        background: linear-gradient(120deg, #0ea5e9, #6366f1);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 10px 30px rgba(14, 165, 233, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SUNABACO Lab</h1>
+      <p>
+        アイデアを砂場のように心ゆくまでかたちにする実験場。小さく試して、すばやく
+        学んで、次の一歩を踏み出す。そんな仲間と場をつなぐコミュニティです。
+      </p>
+      <a class="cta" href="#contact">参加してみる</a>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>つくる</h2>
+        <p>
+          プロトタイピングから本番運用まで、1人ひとりのアウトプットを伴走します。
+        </p>
+      </section>
+      <section class="card">
+        <h2>まなぶ</h2>
+        <p>
+          実務家によるワークショップやレビュー会で、最短距離でスキルを更新。
+        </p>
+      </section>
+      <section class="card">
+        <h2>つながる</h2>
+        <p>
+          多拠点メンバーが交わるイベントを毎週開催。ゆるく濃いネットワークが強み。
+        </p>
+      </section>
+    </main>
+
+    <footer id="contact">
+      hello@sunabaco.example / 080-1234-5678
+    </footer>
+  </body>
+</html>
